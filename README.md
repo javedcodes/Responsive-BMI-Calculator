@@ -2,7 +2,7 @@
 
 **<a href="https://jvcodes.com/responsive-bmi-calculator-using-html-css-and-javascript/" >Body Mass Index (BMI) Calculator</a>** is a simple and effective tool to keep track of health. Here's a responsive BMI calculator that works seamlessly across different screen sizes.  
 
-In this article, I am sharing a free source code for a **Responsive BMI Calculator** using HTML, CSS, and JavaScript that you can use as-is or customize for your projects.  
+In this article, I am sharing a free source code for a **<a href="https://jvcodes.com/responsive-bmi-calculator-using-html-css-and-javascript/" >Responsive BMI Calculator</a>** using HTML, CSS, and JavaScript that you can use as-is or customize for your projects.  
 
 ---
 
