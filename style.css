@@ -1,0 +1,147 @@
+body {
+
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  padding: 20px; /* Ensure padding is present to prevent edge clipping */
+  border-radius: 8px;
+  box-shadow: 2px 4px 30px rgba(0, 0, 0, 0.6);
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  gap: 20px;
+}
+
+.left-section {
+  width: 55%;
+  padding-right: 10px;
+}
+
+.right-section {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.right-section h1 {
+  margin: 0;
+  font-size: 1rem;
+  color: #a83232;
+}
+
+.result-box {
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+label {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  color: #303030;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #a3a3a3;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.radio-group, .select-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.gender-unit-row, .weight-height-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.gender-unit-row .form-group,
+.weight-height-row .form-group {
+  flex: 1;
+}
+
+button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input:focus, select:focus, button:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack sections vertically */
+    padding-right: 35px; /* Ensure consistent padding for the container */
+    margin: 20px; /* Add space around the container */
+  }
+
+  .left-section, .right-section {
+    width: 100%; /* Full width for both sections */
+  }
+
+  .right-section {
+    margin-top: 15px; /* Add spacing between sections */
+  }
+}

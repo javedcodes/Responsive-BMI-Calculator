@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator - JV Codes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Left Section -->
+    <div class="left-section">
+      <h1>BMI Calculator</h1>
+      <form id="bmiForm">
+        <!-- Age Input -->
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" placeholder="2 Years to 120 Years" min="2" max="120" required>
+        </div>
+
+        <!-- Gender and Unit in Row -->
+        <div class="gender-unit-row">
+          <!-- Gender -->
+          <div class="form-group">
+            <label>Gender:</label>
+            <div class="radio-group">
+              <label><input type="radio" name="gender" value="male" required> Male</label>
+              <label><input type="radio" name="gender" value="female"> Female</label>
+            </div>
+          </div>
+          <!-- Unit -->
+          <div class="form-group">
+            <label>Units:</label>
+            <div class="radio-group">
+              <label><input type="radio" name="units" value="metric" checked> Metric (kg, cm)</label>
+              <label><input type="radio" name="units" value="us"> US (lbs, inches)</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Weight and Height in Row -->
+        <div class="weight-height-row">
+          <div class="form-group">
+            <label for="weight">Weight:</label>
+            <input type="number" id="weight" name="weight" placeholder="Weight" min="0" required>
+          </div>
+          <div class="form-group">
+            <label for="height">Height:</label>
+            <input type="number" id="height" name="height" placeholder="Height" min="0" required>
+          </div>
+        </div>
+
+        <!-- Calculate Button -->
+        <button type="button" class="btn" onclick="calculateBMI()">Calculate</button>
+      </form>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-section">
+      <h2>Result</h2>
+      <div class="result-box" id="bmiResult">
+        <div id="bmiValue"></div>
+        <div id="bmiCategory"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
